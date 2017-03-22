@@ -593,7 +593,7 @@ class LiteSpeed_Cache_Admin_Rules
 		}
 
 		// Bedrock Fix - Hardcode reference to .htaccess file
-		$path = ABSPATH . '../.htacces';
+		$path = ABSPATH . '../.htaccess';
 		// File put contents will truncate by default. Will create file if doesn't exist.
 		$ret = file_put_contents($path, $content, LOCK_EX);
 		if (!$ret) {

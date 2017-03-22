@@ -1,0 +1,12 @@
+{
+    "name": "igniteonline/litespeed-cache",
+    "description": "WordPress Litespeed Cache plugin - adapted for Bedrock",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Nicolo Sacchi",
+            "email": "nicolo.s@igniteonline.com.au"
+        }
+    ],
+    "require": {}
+}

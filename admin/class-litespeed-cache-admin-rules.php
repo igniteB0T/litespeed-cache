@@ -47,7 +47,7 @@ class LiteSpeed_Cache_Admin_Rules
     private static $RW_BLOCK_END = '</IfModule>';
     private static $RW_WRAPPER = 'PLUGIN - Do not edit the contents of this block!';
     private static $RW_PREREQ = "\nRewriteEngine on\nCacheLookup Public on\n";
-    private static $IGNITE_RULES = "\nCacheEnable public /\nRewriteEngine on\nRewriteCond %{REQUEST_METHOD} ^(HEAD|GET)$\nRewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login.php|wp-cron.php)\nRewriteRule .* - [E=Cache-Control:max-age=120]\n";
+    private static $IGNITE_RULES = "\nRewriteEngine on\nRewriteCond %{REQUEST_METHOD} ^(HEAD|GET)$\nRewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login.php|wp-cron.php)\nRewriteRule .* - [E=Cache-Control:max-age=120]\n";
 
     private static $RW_PATTERN_COND_START = '/RewriteCond\s%{';
     private static $RW_PATTERN_COND_END = '}\s+([^[\n]*)\s+[[]*/';
